@@ -39,8 +39,8 @@ public class dblp_queryk_handler extends dblp_handler{
 		
 		if(wwwON && authorON){
 			if(isFirst){
-				// firstAuthor = new String(value);
-				// isFirst = false;
+				firstAuthor = new String(value);
+				isFirst = false;
 			}
 			wwwAuthors.put(value,hashKey);
 		}
@@ -51,9 +51,9 @@ public class dblp_queryk_handler extends dblp_handler{
 			throws SAXException {									//!< Action to do after tag is processed
 		if(arg2.equalsIgnoreCase("www")){
 			hashKey++;
-			// authorRep.add(firstAuthor);
-			// pubCount.add(0);
-			// wwwON = false;
+			authorRep.add(firstAuthor);
+			pubCount.add(0);
+			wwwON = false;
 		}
 		if(arg2.equalsIgnoreCase("author")){
 			authorON = false;
@@ -86,8 +86,8 @@ public class dblp_queryk_handler extends dblp_handler{
 			Attributes arg3) throws SAXException {					//!< Action to do when new opening tag encountered.
 		
 		if(arg2.equalsIgnoreCase("www")){
-			// wwwON = true;
-			//isFirst = true;
+			wwwON = true;
+			isFirst = true;
 		}
 		if(arg2.equalsIgnoreCase("author")){
 			authorON = true;				
