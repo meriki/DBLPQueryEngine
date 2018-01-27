@@ -15,4 +15,6 @@ This project is a GUI search engine which retrieves required information from th
   * Result box displays the first 20 results and gives user an option (button) to see next 20 results and so on.
   * Appropriate checks for values in the text boxes is present in the implementation and user is prompted for such values.
   
-  
+  Contributors: 
+  Y S Ramya ([@meriki](https://github.com/meriki/))
+  Manik Arora ([@maniaxiom](https://github.com/maniaxiom))
