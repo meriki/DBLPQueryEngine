@@ -4,7 +4,7 @@ DBLP is a computer science bibliography website. Starting in 1993 with a few HTM
 
 This project is a GUI search engine which retrieves required information from the [DBLP dataset](http://dblp.org/xml/release/). The files are in XML format of [this](http://dblp.uni-trier.de/faq/What+do+I+find+in+dblp+xml) form.
 
-In our project, the following Tasks were carried out -
+### Functionalities implemented
   * Parse the XML file using appropriate parsing techniques.
   * Retrieve and display the results of the given queries on this dataset. 
   * Display the result count along with the data.
